@@ -1,2 +1,2 @@
 # Nukes
-Im just haveing random codes here
+Im just having random codes here
