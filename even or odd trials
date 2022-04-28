@@ -1,0 +1,48 @@
+// IMP- I used switch case and Functions here 
+// This is a trial version
+
+#include<stdio.h>
+void primeornot(int);
+int main()
+{
+    int n;
+    printf("\n\n");
+    printf("enter the number:");
+    scanf("%d",&n);
+    if(n>=0)
+    {
+        primeornot(n);
+    }
+    else
+    {
+        printf("\n\n");
+        printf("the entered number is negative\n");
+    }
+}
+void primeornot(int n)
+{
+    int a[10],i;
+
+    switch (n)
+    {
+    case 1:
+      if (n==2 || n==3 || n==5 || n==7 || n==11 || n==13 || n==19 || n==23)
+    {
+      printf("The number is a prime");
+    }
+      break;
+    case 2: 
+      if (n==2 || n==3 || n==5 || n==7 || n==11 || n==13 || n==19 || n==23)
+    {
+      printf("The number is a prime");
+    }
+      break; 
+    
+    default:
+      printf("The number is a prime");
+      break;
+    }
+    
+    printf("\n\n");
+} 
+ 
