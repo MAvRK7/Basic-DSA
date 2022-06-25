@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+	//THIS CODE Asks you to enter a string and then gives you the frequency of a character that appears in that string 
+	
+	char str[1000], ch;
+	int cnt = 0;
+	printf("Enter a string: ");
+	gets(str);
+	printf("Enter a character to find its frequency: ");
+	scanf("%c", &ch);
+
+	for (int i = 0; str[i] != '\0'; i++)
+	{
+		if (ch == str[i])
+			cnt++;
+	}
+
+	printf("Frequency of %c = %d", ch, cnt);
+	return 0;
+}
