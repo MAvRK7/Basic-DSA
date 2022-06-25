@@ -1,0 +1,15 @@
+#include <stdio.h>
+//Enter the digits and this gives you the sum of the first and last digit
+
+int main()
+{
+	int a = 1;
+	int arr[5];
+	for (int a = 1; a < 5; a++)
+	{
+		printf("Enter the %d digit\n", a);
+		scanf("%d", &arr[a]);
+	}
+	printf("Disired sum is %d", arr[1] + arr[4]);
+	return 0;
+}
