@@ -1,0 +1,47 @@
+// This code inputs a array and then points out even and odd elements and even gives their sum
+
+#include <stdio.h>
+
+int main()
+{
+
+	int oddsum = 0;
+	int evensum = 0;
+	int n;
+	int arr[n];
+	int i;
+
+	printf("enter number of elements in array\n");
+	scanf("%d", &n);
+	printf("enter the array elemets\n");
+	for (int i = 0; i < n; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	for (i = 0; i < n; i+=2)
+	{
+		evensum += arr[i];
+	}
+	printf("even indeces are\n");
+	for (i = 0; i < n; i+=2)
+	{
+		printf("%d", arr[i]);
+		printf("\n");
+	}
+	
+	for (i = 1; i < n; i+=2)
+	{
+		oddsum += arr[i];
+	}
+	printf("odd indeces are\n");
+	for (i = 1; i < n; i+=2)
+	{
+		printf("%d", arr[i]);
+		printf("\n");
+	}
+	
+  printf("sum of even terms are %d", evensum);
+	printf("sum of odd terms are %d", oddsum);
+
+	
+}
