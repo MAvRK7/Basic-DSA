@@ -1,0 +1,44 @@
+//This code can dynamically input no. of rows and cols and take input of their values and prints them out in normal and matrix form 
+
+#include <stdio.h>
+int main()
+{
+	int row;
+	int col;
+	int i = 0;
+	int j = 0;
+	int arr[10][10];
+  //taking input 
+
+	printf("enter how many rows\n");
+	scanf("%d", &row);
+	printf("enter how many columns\n");
+	scanf("%d", &col);
+	for (i = 0; i < row; i++)
+	{
+		for (j = 0; j < col; j++)
+		{
+			printf("Enter [%d][%d]\n", i, j);
+			scanf("%d", &arr[i][j]);
+			printf("\n");
+		}
+	}
+  //printing in normal form 
+	for (i = 0; i < row; i++)
+	{
+		for (j = 0; j < col; j++)
+		{
+			printf("[%d][%d]=%d\n", i, j, arr[i][j]);
+		}
+	}
+  //printing output in matrix form 
+	printf("In matrix form\n");
+	for (i = 0; i < row; i++)
+	{
+		for (j = 0; j < col; j++)
+		{
+			printf("%d\t", arr[i][j]);
+		}
+		printf("\n");
+	}
+}
